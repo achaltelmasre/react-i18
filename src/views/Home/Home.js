@@ -8,16 +8,10 @@ function Home() {
   const usersCount  = 20;
 
   return (
-    <div>
-      <h1>{I18n("welcomeMessage")}</h1>
+    <div className='container'>
+      <h1>{I18n("headingMessage")}</h1>
 
-      <p>{I18n("normalMessage")}</p>
-
-      <h3>{I18n( "greetingMessage")}</h3> 
-
-      <h5>{I18n("endMessage")}</h5>   
-   
-      <select 
+      <select className='langague'
         defaultValue={localStorage.getItem("lang")}
         onChange={(e) =>{
         localStorage.setItem("lang", e.target.value);
@@ -28,8 +22,13 @@ function Home() {
         <option value="en">English</option>
       </select>
 
+      <h4>{I18n("normalMessage")}</h4>
+
+      <p>{I18n( "textMessage")}</p>
+      
+
       <p>
-        {I18n("usersStateMessage",  "<studentCount>", usersCount)}
+       {I18n("usersStateMessage",  "<studentCount>", usersCount)}
       </p>
 
     </div>
