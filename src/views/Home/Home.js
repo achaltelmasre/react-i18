@@ -11,7 +11,7 @@ function Home() {
     <div className='container'>
       <h1>{I18n("headingMessage")}</h1>
 
-      <select className='langague'
+      <select className='language'
         defaultValue={localStorage.getItem("lang")}
         onChange={(e) =>{
         localStorage.setItem("lang", e.target.value);
@@ -22,14 +22,9 @@ function Home() {
         <option value="en">English</option>
       </select>
 
-      <h4>{I18n("normalMessage")}</h4>
+      <h3>{I18n("normalMessage")}</h3>
 
       <p>{I18n( "textMessage")}</p>
-      
-
-      <p>
-       {I18n("usersStateMessage",  "<studentCount>", usersCount)}
-      </p>
 
     </div>
   )

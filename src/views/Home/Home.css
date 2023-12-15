@@ -1,8 +1,28 @@
 .container{
-    width: 600px;
-    background-color: aqua;
-    margin: 50px auto;
+    width: 900px;
+     background-color: rgb(172, 47, 13);
+     color: white;
+    box-shadow: 0 0 10px 1px white;
+
+    margin: 80px auto;
     padding: 20px;
     border-radius: 20px;
+    position: relative;
 
+}
+.language{
+   
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    font-size: 20px;
+    padding: 0 10px;
+    border: none;
+ 
+}
+p{
+    font-size: 200pxpx;
+}
+h1{
+    font-size: 60px;
 }
